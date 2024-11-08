@@ -4,10 +4,10 @@ using namespace std;
 
 int main() {
     const int maxBarang = 50;            
-    string namaBarang[maxBarang];             
-    int hargaPerUnit[maxBarang];
-    int jumlahTerjual[maxBarang];
-    float totalPendapatan[maxBarang];
+    string namaBarang;             
+    int hargaPerUnit;
+    int jumlahTerjual;
+    float totalPendapatan;
     int totalBarang = 0;              
     char inputLagi;                      
 
@@ -16,15 +16,15 @@ int main() {
         cout << "Barang ke -" << totalBarang + 1 << endl;
         
         cout << "Nama Barang : ";
-        cin >> namaBarang[totalBarang];
+        cin >> namaBarang;
 
-        cout << "Harga Perbarang " << namaBarang[totalBarang] << ": ";
-        cin >> hargaPerUnit[totalBarang];
+        cout << "Harga Perbarang " << namaBarang << ": ";
+        cin >> hargaPerUnit;
 
-        cout << "Jumlah Barang Terjual " << namaBarang[totalBarang] << ": ";
-        cin >> jumlahTerjual[totalBarang];
+        cout << "Jumlah Barang Terjual " << namaBarang << ": ";
+        cin >> jumlahTerjual;
 
-        totalPendapatan[totalBarang] = hargaPerUnit[totalBarang] * jumlahTerjual[totalBarang];
+        totalPendapatan = hargaPerUnit * jumlahTerjual;
         totalBarang++;
 
         cout << "Apakah ingin memasukkan data penjualan lagi? (y/n): ";
